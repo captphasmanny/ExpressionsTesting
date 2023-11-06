@@ -7,8 +7,23 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int five()
+{
+    return 5;
+}
+
+int seven()
+{
+    return 7;
+}
+
+int main()
+{
+    int a{1};
+    int b{five()};
+    int c{a+b};
+    std::cout << c << '\n';
+    int d{five() + seven()};
+    std::cout << d << '\n';
     return 0;
 }
